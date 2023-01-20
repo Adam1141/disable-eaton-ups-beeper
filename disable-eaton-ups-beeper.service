@@ -1,0 +1,12 @@
+[Unit]
+Description=disable USB connected Eaton UPS beeper on system start
+After=nut-server.service nut-driver.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/bin/sleep 10
+ExecStart=upscmd -u ups_admin -p 12345678 eaton beeper.disable
+
+[Install]
+WantedBy=default.target
