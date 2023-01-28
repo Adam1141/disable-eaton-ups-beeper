@@ -7,10 +7,10 @@ Things needed:
     1. Debian/Ubuntu Linux OS
     2. Eaton UPS connected with a USB cable
 ``` 
-## Uasge
+## Usage
 
 ```notes
-    1. git clone https://github.com/Adam1141/disable-eaton-ups-beeper
+    1. git clone https://github.com/Adam1141/disable-eaton-ups-beeper.git
     2. cd ./disable-eaton-ups-beeper
     3. sudo ./ups-beeper.sh
     4. reboot the system to take effect:
